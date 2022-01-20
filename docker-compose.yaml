@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /Users/mac51/ionic_API/src:/app/src
+    ports:
+      - 0.0.0.0:8080:80
